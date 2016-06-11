@@ -434,7 +434,7 @@
 		<!--eLabel name="Debug" text="P007B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
  	</screen>
 
-	<!-- ********** Cron Manager ********** DRE -->
+	<!-- ********** UserInterfacePositioner ********** DRE -->
 
         <screen name="UserInterfacePositioner2" position="fill" backgroundColor="#20000000" title="OSD Adjustment" flags="wfNoBorder" >
         	<widget source="text" render="Label" position="200,110" zPosition="1" size="880,100" font="Regular;21" halign="center" valign="center" foregroundColor="white" backgroundColor="header" transparent="1" />
@@ -659,6 +659,293 @@
 		<widget name="headline" position="4,0" size="128,22" font="Regular;20"/>
 		<widget source="parent.title" render="Label" position="6,26" size="120,34" font="Regular;14"/>
 		<!--eLabel name="Debug" text="P011B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
+	</screen>
+	<!-- CCCam Config  -->
+	<screen name="EcmInfoConfigMenu" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="config" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020a" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam InfoMain  -->
+	<screen name="CCcamInfoMain" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="menu" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020b" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam ECM  -->
+	<screen name="CCcamInfoEcmInfoSelection" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="list" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020c" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam InfoScreen  -->
+	<screen name="CCcamInfoInfoScreen" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Date"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="text" position="50,90" size="870,720" font="Console;22" backgroundColor="header" transparent="1" />
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020d" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam Shared Viewer  -->
+	<screen name="CCcamShareViewMenu" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Ext"/>
+		<panel name="p800_Date"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="895,180" size="15,720" pixmap="box/maxbargh.png" zPosition="4" alphatest="blend"/>
+		<widget name="list" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<widget name="uphops"    position="1280,480" size="400,40" font="Regular;23" backgroundColor="header" transparent="1" />
+		<widget name="cards"     position="1550,480" size="300,40" halign="right" font="Regular;23" backgroundColor="header" transparent="1" />
+		<widget name="providers" position="1280,530" size="400,40" font="Regular;23" backgroundColor="header" transparent="1" />
+		<widget name="reshare"   position="1550,530" size="300,40" halign="right" font="Regular;23" backgroundColor="header" transparent="1" />
+		<widget name="title" position="1280,600" size="600,200" halign="center" font="Regular;23" transparent="1" />	
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020e" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam Info SubMenu  -->
+	<screen name="CCcamInfoSubMenu" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<panel name="p800_Ext"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="895,180" size="15,720" pixmap="box/maxbargh.png" zPosition="4" alphatest="blend"/>
+		<widget name="list" position="50,90" size="550,510" font="Regular;22" itemHeight="40" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<widget name="info" position="1280,480" size="600,400" font="Regular;22" backgroundColor="header" transparent="1" />
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020f" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam Info SubMenu  -->
+	<screen name="CCcamInfoServerMenu" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<panel name="p800_Ext"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<widget name="list" position="50,90" size="560,500" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<widget name="info" position="1280,480" size="510,520" font="Regular;23" backgroundColor="header" transparent="1" />
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020g" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam Info SubMenu  -->
+	<screen name="CCcamInfoServerMenu" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<panel name="p800_Ext"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<widget name="list" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<widget name="info" position="1280,480" size="600,400" font="Regular;22" backgroundColor="header" transparent="1" />
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020h" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam Info ConfigMenu  -->
+	<screen name="CCcamInfoConfigMenu" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="config" position="50,90" size="550,510" font="Regular;16" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P020i" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam InfoRemote  -->
+	<screen name="CCcamInfoRemoteBoxMenu" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<panel name="nRGYB"/> 
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="list" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<!-- eLabel name="DEBUG" text="P020j" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam InfoShare  -->
+	<screen name="CCcamInfoShareInfo" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<panel name="nRGYB"/> 
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="list" position="50,90" size="550,510" font="Regular;22" itemHeight="102" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<!-- eLabel name="DEBUG" text="P020k" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam ConfigSwitch  -->
+	<screen name="CCcamInfoConfigSwitcher" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="nRGYB"/> 
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="list" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<!-- eLabel name="DEBUG" text="P020l" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- CCCam InfoMenu  -->
+	<screen name="CCcamInfoMenuConfig" position="fill" title="CCcam Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<panel name="nRGY"/> 
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<widget name="list" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<!-- eLabel name="DEBUG" text="P020m" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<!-- ********** OsCAM Info ********** P021  -->
+	
+	<screen name="OscamInfoMenu" position="fill" title="OscamInfoMenu" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<widget name="mainmenu" position="50,90" size="550,510" font="Regular;23" itemHeight="40" noWrap="1" backgroundColor="header" transparent="1" />
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P021" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="oscReadMe" position="full" title="Readme" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<widget name="status" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P021a" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="oscECMInfo" position="fill" title="ECM Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<widget name="output" position="50,90" size="550,510" font="Regular;23" itemHeight="40" backgroundColor="header" transparent="1" />
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P021b" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>'
+
+	<screen name="OscamInfoConfigScreen" position="fill" title="Oscam Info Setup" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
+		<panel name="p800_Ext"/>
+		<panel name="sRG"/> 
+		<ePixmap position="640,440" size="256,256" pixmap="menu/camcenter.png" alphatest="blend"/>
+		<ePixmap position="1440,180" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<widget name="config" position="50,90" size="550,510" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" />
+		<widget name="status" render="Label" position="1280,480" size="600,200" font="Regular;22" halign="center" valign="center" foregroundColor="ltbluette" backgroundColor="bluette" transparent="1" zPosition="5" />
+		<!-- eLabel name="DEBUG" text="P021c" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="oscInfo" position="0,60" size="1920,1020" title="Client Info" backgroundColor="#10000000" >
+		<ePixmap position="30,15" pixmap="oDreamy/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_red" render="Label" position="80,15" size="210,34" font="Regular;22" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="440,15" pixmap="oDreamy/buttons/greenpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_green" render="Label" position="490,15" size="210,34" font="Regular;22" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="750,15" pixmap="oDreamy/buttons/yellowpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_yellow" render="Label" position="800,15" size="210,34" font="Regular;22" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="1050,15" pixmap="oDreamy/buttons/bluepanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_blue" render="Label" position="1100,15" size="210,34" font="Regular;22" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<eLabel position="10,60" size="1800,2" backgroundColor="bluette" zPosition="2"/>
+		<widget name="output" position="10,80" size="1800,920" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1" />
+		<!-- eLabel name="DEBUG" text="P021d" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="oscReaderStats" position="fill" title="Client Info" backgroundColor="transparent" flags="wfNoBorder" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Date"/>
+		<widget source="output" render="Listbox" position="50,90" size="1150,730" scrollbarMode="showOnDemand" >
+			<convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (35,[
+							MultiContentEntryText(pos = (0, 1),   size = (100, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (100, 1), size = (50, 24),  font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (150, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (300, 1), size = (60, 24),  font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (360, 1), size = (60, 24),  font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (420, 1), size = (80, 24),  font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (510, 1), size = (80, 24),  font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (590, 1), size = (80, 24),  font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							]),"HD": (35,[
+							MultiContentEntryText(pos = (0, 1),   size = (160, 30), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (170, 1), size = (180, 30), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (370, 1), size = (250, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (540, 1), size = (80, 30),  font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (630, 1), size = (80, 30),  font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (720, 1), size = (130, 30), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (840, 1), size = (130, 30), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (970, 1), size = (100, 30), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							]),
+					},
+					"fonts": [gFont("Regular", 22),gFont("Regular", 26),gFont("Regular", 24),gFont("Regular", 20)],
+					"itemHeight": 40
+				}
+			</convert>
+		</widget>
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P021e" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
+	<screen name="oscEntitlements" position="fill" title="Client Info" >
+		<panel name="p800_Template"/>
+		<panel name="p800_Date"/>
+		<widget source="output" render="Listbox" position="50,90" size="1150,730" scrollbarMode="showOnDemand" title="Client Info" flags="wfNoBorder" >
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (35,[
+						MultiContentEntryText(pos = (0, 1),   size = (100, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+						MultiContentEntryText(pos = (100, 1), size = (50, 24),  font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+						MultiContentEntryText(pos = (150, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+						MultiContentEntryText(pos = (300, 1), size = (60, 24),  font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+						MultiContentEntryText(pos = (360, 1), size = (60, 24),  font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+						MultiContentEntryText(pos = (420, 1), size = (80, 24),  font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+						MultiContentEntryText(pos = (510, 1), size = (80, 24),  font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+						MultiContentEntryText(pos = (590, 1), size = (80, 24),  font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+						]),"HD": (35,[
+						MultiContentEntryText(pos = (0, 1),   size = (160, 30), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+						MultiContentEntryText(pos = (170, 1), size = (180, 30), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+						MultiContentEntryText(pos = (370, 1), size = (250, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+						MultiContentEntryText(pos = (540, 1), size = (80, 30),  font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+						MultiContentEntryText(pos = (630, 1), size = (80, 30),  font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+						MultiContentEntryText(pos = (720, 1), size = (130, 30), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+						MultiContentEntryText(pos = (840, 1), size = (130, 30), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+						MultiContentEntryText(pos = (970, 1), size = (100, 30), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+						]),
+				},
+				"fonts": [gFont("Regular", 22),gFont("Regular", 26),gFont("Regular", 26),gFont("Regular", 30)],
+				"itemHeight": 40
+			}
+			</convert>
+		</widget>
+		<ePixmap position="40,648"  size="900,90"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<!-- eLabel name="DEBUG" text="P021f" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- ********** Internet Radio ********** -->
@@ -1180,7 +1467,7 @@
 		<!--eLabel name="Debug" text="P015B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
-	<!-- ********** Forecast Weather ********** P016 FHD -->
+	<!-- ********** Forecast Weather ********** P016  -->
 
 	<!--  Weather Plugin Setup  -->
 	<screen name="WeatherPluginEntriesListConfigScreenfore" position="fill" title="WeatherPlugin: List of Entries" backgroundColor="transparent" flags="wfNoBorder" >

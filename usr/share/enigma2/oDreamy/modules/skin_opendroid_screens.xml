@@ -333,7 +333,7 @@
 		<panel name="p800_Date" />
 		<panel name="nRGY"/>
 		<ePixmap pixmap="oDreamy/menu/utility.png" position="640,440" size="256,256" zPosition="2" alphatest="blend" />
-		<widget source="menu" render="Listbox" position="50,100" size="560,500" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="menu" render="Listbox" position="50,100" size="560,500" font="Regular;20" itemHeight="45" scrollbarMode="showOnDemand" transparent="1">
 		      <convert type="StringList" />
 		</widget>
 		<!-- eLabel name="DEBUG"  text="PANEL E015" position="20,20" size="300,60" font="Regular;40"  foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->

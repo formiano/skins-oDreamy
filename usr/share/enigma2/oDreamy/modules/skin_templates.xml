@@ -91,7 +91,12 @@
 			<convert type="ConditionalShowHide" /> 
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/startboot.png"             position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
-			<convert type="MenuEntryCompare">OPDMainPanel_summary</convert>
+			<convert type="MenuEntryCompare">MainPanel_summary</convert>
+			<convert type="ConditionalShowHide" /> 
+		</widget>
+		
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_opendroid.png" position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+			<convert type="MenuEntryCompare">OPDpanel</convert>
 			<convert type="ConditionalShowHide" /> 
 		</widget>
 	</screen>

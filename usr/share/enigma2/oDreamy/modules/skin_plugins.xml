@@ -402,9 +402,39 @@
 		<widget name="newversion_label" position="50,140"  size="300,25" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="newversion"       position="370,140" size="100,25" font="Regular;22" backgroundColor="header" transparent="1"/>
 		<widget source="status" render="Label" position="50,500" size="685,75" font="Regular;22" backgroundColor="header" transparent="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
+		<ePixmap position="780,440" size="300,300" pixmap="menutext" alphatest="blend"/>
 		<!--eLabel name="Debug" text="P006B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
+		<!--  Transcoder Setup  --> 
+	<screen name="TranscodingSetup" position="fill" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="p800_Template"/>
+		<panel name="p800_DateMid"/>
+		<panel name="p800_Ext"/>
+		<ePixmap position="670,470" size="256,256" pixmap="icons/hdmic.png" alphatest="blend"/>
+		<widget name="config" position="70,100" size="570,200" font="Regular;22" itemHeight="35" backgroundColor="header" scrollbarMode="showOnDemand" transparent="1" />
+		<eLabel position="60,400" size="750,1" backgroundColor="#303030" zPosition="1"/>
+		<widget name="HelpTextHeader1" position="15,400" size="970,40"  font="Regular;24" halign="center" valign="center" foregroundColor="#ff0000" backgroundColor="header" transparent="1"/>
+		<widget name="HelpText1"       position="70,480" size="1170,240" font="Regular;22" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
+		<widget name="HelpTextHeader2" position="70,750" size="1170,40"  font="Regular;22" halign="center" valign="center" foregroundColor="#ff0000" backgroundColor="header" transparent="1"/>
+		<widget name="HelpText2"       position="70,800" size="1170,80"  font="Regular;22" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
+		<ePixmap position="965,100" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<widget name="description" position="960,480" size="600,440" font="Regular;22" halign="center" valign="top" foregroundColor="white" backgroundColor="bluette" transparent="1" zPosition="1"/>
+		<widget name="text" position="55,400" size="540,60" font="Regular;22" halign="center" valign="top" foregroundColor="#ff0000" backgroundColor="bluette" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="buttons/redpanel.png"    position="40,674"  size="22,22" alphatest="blend"/>
+		<ePixmap pixmap="buttons/greenpanel.png"  position="240,674" size="22,22" alphatest="blend"/>
+		<ePixmap pixmap="buttons/yellowpanel.png" position="450,674"  size="22,22" alphatest="blend"/>
+		<ePixmap pixmap="buttons/bluepanel.png"   position="650,674" size="22,22" alphatest="blend"/>
+		<widget name="key_red"    position="70,673"  size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_green"  position="270,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_yellow" position="480,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_blue"   position="680,673" size="110,28" backgroundColor="header" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<eLabel text="Cancel"     position="70,673"  size="180,28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
+		<eLabel text="Save"    position="270,673" size="180,28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
+		<eLabel text="Default" position="480,673" size="180,28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
+		<eLabel text="Advanced"      position="680,673" size="180,28" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1" zPosition="3" />
+		<!-- eLabel name="DEBUG" text="P011a" position="20,20" size="300,60" font="Regular;40" foregroundColor="red" backgroundColor="#10202020" transparent="1" zPosition="99"/-->
+	</screen>
+
 
 	<!-- ********** Cron Manager ********** DRE -->
  
@@ -1642,6 +1672,10 @@
 		<eLabel position="35,20"   size="790,50"  backgroundColor="dreamy"  zPosition="-1" />
 		<eLabel position="35,20"   size="790,1"   backgroundColor="black"   zPosition="-1" />
 		<eLabel position="35,20"   size="1,50"    backgroundColor="black"   zPosition="-1" />
+		<!-- Code -->
+		<widget source="Title" render="Label" position="115,31" size="276,40" font="Regular;26" halign="left" foregroundColor="ltbluette" backgroundColor="black" transparent="1" zPosition="1" />
+		<ePixmap position="33,18" size="35,35" pixmap="oDreamy/buttons/angle30.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="50,33" size="45,50" pixmap="oDreamy/icons/list.png" alphatest="blend" zPosition="2" />
 		<!-- Middle -->
 		<eLabel position="35,78"   size="790,545" backgroundColor="dreamy"  zPosition="-1" />
 		<eLabel position="35,76"   size="575,5"   backgroundColor="bluette" zPosition="10" />
@@ -1659,13 +1693,19 @@
 		<eLabel position="980,633" size="265,65"  backgroundColor="dreamy" zPosition="-1" />
 		<eLabel position="980,633" size="265,1"   backgroundColor="black"  zPosition="-1" />
 		<eLabel position="980,633" size="1,65"    backgroundColor="black"  zPosition="-1" />
-		<!-- Code -->
-		<widget source="Title" render="Label" position="115,31" size="276,40" font="Regular;26" halign="left" foregroundColor="ltbluette" backgroundColor="black" transparent="1" zPosition="1" />
-		<ePixmap position="33,18" size="35,35" pixmap="oDreamy/buttons/angle30.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="50,33" size="45,50" pixmap="oDreamy/icons/list.png" alphatest="blend" zPosition="2" />
+		<!-- Analogic Clock -->
+		<widget source="global.CurrentTime" render="WatchesB" position="995,646" size="31,31" zPosition="4" foregroundColor="#505050" alphatest="blend">
+			<convert type="ExtraNumText">secHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="WatchesB" position="996,648" size="30,30" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+			<convert type="ExtraNumText">minHand</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="WatchesB" position="1000,650" size="24,24" zPosition="2" foregroundColor="red" alphatest="blend">
+			<convert type="ExtraNumText">hourHand</convert>
+		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S -->
 		<ePixmap position="838,653" size="45,30" pixmap="oDreamy/icons/select.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="990,650" size="35,35" pixmap="oDreamy/icons/clock50.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="990,641" size="47,47" pixmap="oDreamy/icons/clock50.png" alphatest="blend" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="990,645" size="250,40" font="Regular;38" halign="right" foregroundColor="orange" backgroundColor="black" transparent="1" zPosition="1">
 		      <convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>
@@ -1741,7 +1781,7 @@
 		<ePixmap position="50,33" size="45,50" pixmap="oDreamy/icons/list.png" alphatest="blend" zPosition="2" />
 		<!-- Clock %d.%m.%Y - %H:%M:%S -->
 		<ePixmap position="838,653" size="45,30" pixmap="oDreamy/icons/select.png" alphatest="blend" zPosition="2" />
-		<ePixmap position="990,650" size="35,35" pixmap="oDreamy/icons/clock50.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="990,641" size="47,47" pixmap="oDreamy/icons/clock50.png" alphatest="blend" zPosition="2" />
 		<widget source="global.CurrentTime" render="Label" position="990,645" size="250,40" font="Regular;38" halign="right" foregroundColor="orange" backgroundColor="black" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M:%S</convert>
 		</widget>

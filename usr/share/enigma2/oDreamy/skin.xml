@@ -660,7 +660,7 @@
     <!-- SecondinfoBar -->
     <screen name="SecondInfoBar" position="fill" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="InfoBar"/>
-		<ePixmap position="0,112" size="1280,403" pixmap="Dreamy/menu/eventnow-full.png" transparent="1" zPosition="-1" />
+		<ePixmap position="0,112" size="1280,403" pixmap="oDreamy/menu/eventnow.png" transparent="1" zPosition="-1" />
 		<eLabel text="Now :" position="50,120" size="80,30" font="Regular;26" foregroundColor="yellow" backgroundColor="un10000000" transparent="1" zPosition="4" />
     <!-- Event start & end times, and time remaining -->
     <widget source="session.Event_Now" render="Label" position="140,120" size="100,30" halign="left" font="Regular; 26" foregroundColor="white" backgroundColor="un10000000" transparent="1" zPosition="4">

@@ -402,7 +402,7 @@
 		<widget name="newversion_label" position="50,140"  size="300,25" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="newversion"       position="370,140" size="100,25" font="Regular;22" backgroundColor="header" transparent="1"/>
 		<widget source="status" render="Label" position="50,500" size="685,75" font="Regular;22" backgroundColor="header" transparent="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menutext" alphatest="blend"/>
+		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="P006B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 		<!--  Transcoder Setup  --> 

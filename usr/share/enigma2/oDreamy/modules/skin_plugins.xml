@@ -402,7 +402,7 @@
 		<widget name="newversion_label" position="50,140"  size="300,25" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget name="newversion"       position="370,140" size="100,25" font="Regular;22" backgroundColor="header" transparent="1"/>
 		<widget source="status" render="Label" position="50,500" size="685,75" font="Regular;22" backgroundColor="header" transparent="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
+		<ePixmap position="780,440" size="300,300" pixmap="menutext" alphatest="blend"/>
 		<!--eLabel name="Debug" text="P006B" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 		<!--  Transcoder Setup  --> 
@@ -1694,13 +1694,13 @@
 		<eLabel position="980,633" size="265,1"   backgroundColor="black"  zPosition="-1" />
 		<eLabel position="980,633" size="1,65"    backgroundColor="black"  zPosition="-1" />
 		<!-- Analogic Clock -->
-		<widget source="global.CurrentTime" render="WatchesB" position="995,646" size="31,31" zPosition="4" foregroundColor="#505050" alphatest="blend">
+		<widget source="global.CurrentTime" render="WatchesB" position="995,648" size="31,31" zPosition="4" foregroundColor="#505050" alphatest="blend">
 			<convert type="ExtraNumText">secHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="WatchesB" position="996,648" size="30,30" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+		<widget source="global.CurrentTime" render="WatchesB" position="997,648" size="34,30" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
 			<convert type="ExtraNumText">minHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="WatchesB" position="1000,650" size="24,24" zPosition="2" foregroundColor="red" alphatest="blend">
+		<widget source="global.CurrentTime" render="WatchesB" position="996,648" size="27,27" zPosition="2" foregroundColor="red" alphatest="blend">
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<!-- Clock %d.%m.%Y - %H:%M:%S -->

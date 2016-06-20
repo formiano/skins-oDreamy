@@ -661,7 +661,7 @@
 		<widget source="global.CurrentTime" render="Watches" position="995,646" size="34,34" zPosition="4" foregroundColor="#505050" alphatest="blend">
 			<convert type="ExtraNumText">secHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Watches" position="996,648" size="30,30" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+		<widget source="global.CurrentTime" render="Watches" position="997,648" size="35,30" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
 			<convert type="ExtraNumText">minHand</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Watches" position="1000,650" size="24,24" zPosition="2" foregroundColor="red" alphatest="blend">

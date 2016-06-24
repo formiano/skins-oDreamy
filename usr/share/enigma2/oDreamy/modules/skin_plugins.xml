@@ -388,7 +388,7 @@
 		<panel name="sYB"/>
 		<widget name="file_list" position="50,100" size="685,450" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget source="status" render="Label" position="50,580" zPosition="5" size="685,75" font="Regular;20" halign="left" valign="center" backgroundColor="header" transparent="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="P006A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#102e59" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -635,7 +635,7 @@
 		<panel name="p900_Ext"/>
 		<panel name="nRGYB"/> 
 		<panel name="I"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_listch.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/ico_listch.png" alphatest="blend"/>
 		<widget name="config" position="50,100" size="585,500" scrollbarMode="showOnDemand"  backgroundColor="header" transparent="1"/>
 		<widget name="status" position="990,100" size="250,60" font="Regular;20"/>
 		<widget name="statusbar" position="990,200" size="250,20" font="Regular;18"/>

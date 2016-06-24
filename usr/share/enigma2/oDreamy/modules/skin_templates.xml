@@ -15,13 +15,13 @@
 		<panel name="p700_Template" />
 		<panel name="p700_Date" />
 		<!-- menu list -->
-		<ePixmap position="515,70"  size="230,425" pixmap="oDreamy/menu/opendroidlogo.png"    alphatest="blend" zPosition="1" />
-		<ePixmap pixmap="box/maxbar.png" position="511,100" size="10,495" alphatest="blend" zPosition="5" />
-		<widget source="menu" render="Listbox" position="30,100" size="491,495" zPosition="1" scrollbarMode="showOnDemand"  transparent="1"
+		<ePixmap position="495,70"  size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="box/maxbar.png" position="482,100" size="10,495" alphatest="blend" zPosition="5" />
+		<widget source="menu" render="Listbox" position="30,100" size="454,495" zPosition="1" scrollbarMode="showOnDemand"  transparent="1"
 			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
 			selectionPixmap="oDreamy/box/slider.png" backgroundPixmap="oDreamy/box/sliderb.png" >
  			<convert type="TemplatedMultiContent">
- 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (550, 40), flags = RT_HALIGN_LEFT, text = 0)],
+ 				{"template": [ MultiContentEntryText(pos = (19, 5), size = (555, 40), flags = RT_HALIGN_LEFT, text = 0)],
  				"fonts": [gFont("Regular", 24)],
  				"itemHeight": 45
  				}
@@ -34,68 +34,68 @@
 
  	<!-- Menu Icons Template DRE -->
 	<screen name="MenuIconsTemplate">
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/media_player.png"         position="550,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/media_player.png"         position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/timer_edit.png"           position="550,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/timer_edit.png"           position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_ci.png"               position="550,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_ci.png"               position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">emu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_ci.png"               position="550,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_ci.png"               position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">cs</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/info_screen.png"          position="550,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/info_screen.png"          position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/plugin_selection.png"     position="550,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/plugin_selection.png"     position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_script.png"           position="550,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_script.png"           position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">scripts</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/setup_selection.png"      position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/setup_selection.png"      position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/standby_restart_list.png" position="550,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/standby_restart_list.png" position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/setup_selection.png"       position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/setup_selection.png"       position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">dmc_mainmenu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/dvd_player.png"            position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/dvd_player.png"            position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">dvd_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/setup_selection.png"       position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/setup_selection.png"       position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">scart_switch</convert>
 			<convert type="ConditionalShowHide" /> 
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/timer_edit.png"            position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/timer_edit.png"            position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">timer_menu</convert>
 			<convert type="ConditionalShowHide" /> 
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/timer_edit.png"            position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/timer_edit.png"            position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">picshow_summary</convert>
 			<convert type="ConditionalShowHide" /> 
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/startboot.png"             position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/startboot.png"             position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">MainPanel_summary</convert>
 			<convert type="ConditionalShowHide" /> 
 		</widget>
 		
-		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_opendroid.png" position="550,435" size="380,256" alphatest="blend" transparent="1" zPosition="2" >
+		<widget source="menu" render="Pixmap" pixmap="oDreamy/menu/ico_opendroid.png" position="530,435" size="256,256" alphatest="blend" transparent="1" zPosition="2" >
 			<convert type="MenuEntryCompare">OPDpanel</convert>
 			<convert type="ConditionalShowHide" /> 
 		</widget>
@@ -110,43 +110,43 @@
 	<!-- Menu DRE -->
 	<screen name="Menu" position="fill"  title="Menu" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="oDreamy/menu/setup_selection.png" position="550,435" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy/menu/setup_selection.png" position="530,435" size="256,256" zPosition="2" alphatest="blend" />
 	</screen> 
 
 	<!-- Menu Setup DRE -->
 	<screen name="menu_setup" position="fill" title="Main Menu Setup" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="oDreamy/menu/setup_selection.png" position="550,435" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy/menu/setup_selection.png" position="530,435" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
 	
 	<!-- Menu Scan Channel DRE -->
 	<screen name="menu_scan" position="fill" title="Main Menu Channel Scan" backgroundColor="#FF000000" flags="wfNoBorder">
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="oDreamy/menu/ico_listch.png" position="550,435" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy/menu/ico_listch.png" position="530,435" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
 	
 	<!-- Menu System DRE -->
 	<screen name="menu_system" position="fill" title="Main Menu System" backgroundColor="#FF000000" flags="wfNoBorder">
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="oDreamy/menu/setup_selection.png" position="550,435" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy/menu/setup_selection.png" position="530,435" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
 	
 	<!-- Menu HDD DRE -->
 	<screen name="menu_harddisk" position="fill" title="Main Menu HDD" backgroundColor="#FF000000" flags="wfNoBorder">
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="oDreamy/menu/ico_folder.png" position="550,435" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy/menu/ico_folder.png" position="530,435" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
 	
 	<!-- Menu Information DRE -->
 	<screen name="menu_information" position="fill" title="Menu Information" backgroundColor="#FF000000" flags="wfNoBorder" >
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="oDreamy/menu/info_screen.png" position="550,435" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy/menu/info_screen.png" position="530,435" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
 	
 	<!-- Menu ShutDown DRE -->
 	<screen name="menu_shutdown" position="fill" title="Menu ShutDown" backgroundColor="#FF000000" flags="wfNoBorder">
 		<panel name="MenuTemplate" />
-		<ePixmap pixmap="oDreamy/menu/standby_restart_list.png" position="550,435" size="256,256" zPosition="2" alphatest="blend" />
+		<ePixmap pixmap="oDreamy/menu/standby_restart_list.png" position="530,435" size="256,256" zPosition="2" alphatest="blend" />
 	</screen>
 
 	<!-- P700 Template DRE -->

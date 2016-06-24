@@ -68,20 +68,20 @@
 		<color name="header" value="#00272e43"/>
 		<color name="bkblue" value="#00162b49"/>
 		<color name="bkinfobar" value="#00204372"/>
-		<color name="bluette" value="#0073c6ff"/>
 		<color name="black" value="#00000000"/>
 		<color name="blue" value="#00879ce1"/>
 		<color name="bluetransparent" value="#08001e4b"/>
 		<color name="dark" value="#00242424"/>
 		<color name="darkgrey" value="#00555556"/>
 		<color name="foreground" value="#00f0f0f0"/>
+		<color name="lime" value="#0000ff00" />
 		<color name="green" value="#0056c856"/>
 		<color name="greentransparent" value="#08004c00"/>
 		<color name="grey" value="#00aaaaaa"/>
 		<color name="infobarBG" value="#41080808"/>
 		<color name="listbox" value="#000f56a4"/>
 		<color name="noTransBG" value="#00101214"/>
-		<color name="cyan1" value="#0000deff" />
+		<color name="OD" value="#0000deff" />
 		<color name="orange" value="#00ffc000"/>
 		<color name="rds_text_bg" value="#00003258"/>
 		<color name="red" value="#00ff4a3c"/>
@@ -375,7 +375,7 @@
 		<widget source="lab3" render="Label" position="70,800" size="685,40" font="Regular; 32" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
 		<ePixmap position="350,985" pixmap="oDreamy/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
 		<widget source="key_green" render="Label" position="400,955" size="200,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="960,640" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
+		<ePixmap position="980,640" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
 		<!-- eLabel name="Debug" text="S018A" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen> 
 
@@ -421,13 +421,13 @@
 		<eLabel position="0,100"  size="410,1" backgroundColor="bluette" zPosition="-1" />
 		<ePixmap pixmap="oDreamy/icons/bigclock.png" position="50,30" size="60,60" zPosition="1" alphatest="blend" />
 		<!-- *** NOT FOR CVS Analogic Clock Use Renderer Watches and Converter ExtraNumText *** -->
-		<widget source="global.CurrentTime" render="WatchesB" position="58,39" size="40,40" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
+		<widget source="global.CurrentTime" render="WatchesB" position="59,40" size="40,40" zPosition="4" foregroundColor="#505050"   alphatest="blend" >
 			<convert type="ExtraNumText">secHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="WatchesB" position="64,43" size="30,35" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
+		<widget source="global.CurrentTime" render="WatchesB" position="63,45" size="30,35" zPosition="3" foregroundColor="ltbluette" alphatest="blend">
 			<convert type="ExtraNumText">minHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="WatchesB" position="67,47" size="22,22" zPosition="2" foregroundColor="red"     alphatest="blend">
+		<widget source="global.CurrentTime" render="WatchesB" position="67,48" size="22,22" zPosition="2" foregroundColor="red"     alphatest="blend">
 			<convert type="ExtraNumText">hourHand</convert>
 		</widget>
 		<!-- *** NOT FOR CVS Analogic Clock Use Renderer Watches and Converter ExtraNumText *** -->
@@ -637,10 +637,10 @@
 		</widget>
 		<!-- ***** CenterUp Meteo Panel ***** -->
 		<eLabel position="415,20"  size="460,82" backgroundColor="header"  zPosition="-1" />
-		<eLabel position="430,17"  size="120,5"  backgroundColor="bluette" zPosition="-1" />
-		<eLabel position="430,20"  size="430,1"  backgroundColor="bluette" zPosition="-1" />
-		<eLabel position="520,98"  size="340,5"  backgroundColor="bluette" zPosition="-1" />
-		<eLabel position="430,100" size="430,1"  backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="415,17"  size="120,5"  backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="415,20"  size="460,1"  backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="535,98"  size="340,5"  backgroundColor="bluette" zPosition="-1" />
+		<eLabel position="415,100" size="460,1"  backgroundColor="bluette" zPosition="-1" />
 <widget render="MSNWeatherPixmap" source="session.MSNWeather" position="434,22" size="78,78" zPosition="2" alphatest="blend">
   <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy/msn/,png</convert>
 </widget>
@@ -662,25 +662,25 @@
 	<screen name="SecondInfoBar" position="0,0" size="1280,720" title="Second InfoBar" backgroundColor="transparent" flags="wfNoBorder">
     <eLabel position="-2,540" size="1280,180" backgroundColor="header" zPosition="-1" />
     <!-- ***** LeftUp Panel ***** -->
-    <eLabel position="40,30" size="370,80" backgroundColor="header" zPosition="-1" />
-    <eLabel position="40,27" size="90,5" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="40,30" size="370,1" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="120,108" size="290,5" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="40,110" size="370,1" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="25,12" size="402,95" backgroundColor="header" zPosition="-1" />
+    <eLabel position="25,7" size="90,5" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="25,11" size="402,1" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="137,106" size="290,5" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="25,107" size="402,1" backgroundColor="bluette" zPosition="-1" />
     <!-- ***** CenterUp Panel ***** -->
-    <eLabel position="460,30" size="370,80" backgroundColor="header" zPosition="-1" />
-    <eLabel position="460,27" size="90,5" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="460,30" size="370,1" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="540,108" size="290,5" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="40,110" size="370,1" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="440,12" size="402,95" backgroundColor="header" zPosition="-1" />
+    <eLabel position="440,7" size="90,5" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="440,11" size="402,1" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="552,106" size="290,5" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="25,107" size="402,1" backgroundColor="bluette" zPosition="-1" />
     <!-- ***** RightUp Panel ***** -->
-    <eLabel position="880,30" size="360,80" backgroundColor="header" zPosition="-1" />
-    <eLabel position="880,27" size="90,5" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="880,30" size="360,1" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="970,108" size="270,5" backgroundColor="bluette" zPosition="-1" />
-    <eLabel position="880,110" size="360,1" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="857,12" size="402,95" backgroundColor="header" zPosition="-1" />
+    <eLabel position="857,7" size="90,5" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="857,11" size="402,1" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="970,106" size="290,5" backgroundColor="bluette" zPosition="-1" />
+    <eLabel position="857,107" size="402,1" backgroundColor="bluette" zPosition="-1" />
     <!-- eLabel position="0,520"   size="730,40"   backgroundColor="trbluette" zPosition="-1" /-->
-    <ePixmap pixmap="oDreamy/buttons/bclose.png" position="-207,520" size="1000,40" zPosition="-1" alphatest="blend" />
+    <ePixmap pixmap="oDreamy/buttons/closebar.png" position="-0,520" size="1000,40" zPosition="-1" alphatest="blend" />
     <eLabel position="791,540" size="580,1" backgroundColor="bluette" zPosition="-1" />
     <eLabel text="Ch:" position="40,523" size="80,36" font="Regular;32" valign="center" foregroundColor="white" backgroundColor="bluette" transparent="1" />
     <!-- *** use Renderer ODChannelNumber *** -->
@@ -755,10 +755,10 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <!-- Picon -->
-    <widget source="session.CurrentService" render="PiconB" position="35,575" size="130,80" alphatest="blend" zPosition="1">
+    <widget source="session.CurrentService" render="PiconUni" position="35,575" size="130,80" alphatest="blend" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <ePixmap position="0,112" size="1280,403" pixmap="oDreamy/menu/eventnow-full.png" transparent="1" zPosition="-1" />
+    <ePixmap position="0,112" size="1280,403" pixmap="oDreamy/menu/eventnow.png" transparent="1" zPosition="-1" />
     <eLabel text="Now :" position="50,120" size="80,30" font="Regular;26" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="4" />
     <!-- Event start & end times, and time remaining -->
     <widget source="session.Event_Now" render="Label" position="140,120" size="100,30" halign="left" font="Regular; 26" foregroundColor="white" backgroundColor="#10000000" transparent="1" zPosition="4">
@@ -780,7 +780,7 @@
     </widget>
     <eLabel position="50,235" size="565,1" backgroundColor="#10202020" zPosition="4" />
     <!-- Event extended description -->
-    <widget source="session.Event_Now" render="Label" position="50,245" size="560,265" font="Regular; 26" halign="center" valign="top" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="4">
+    <widget source="session.Event_Now" render="Label" position="50,245" size="560,265" font="Regular; 22" halign="center" valign="top" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="4">
     <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel text="Next :" position="660,120" size="80,30" font="Regular;26" foregroundColor="yellow" backgroundColor="#10000000" transparent="1" zPosition="4" />
@@ -804,7 +804,7 @@
     </widget>
     <eLabel position="665,235" size="570,1" backgroundColor="#10202020" zPosition="4" />
     <!-- Event extended description -->
-    <widget source="session.Event_Next" render="Label" position="665,245" size="570,265" font="Regular; 26" halign="center" valign="top" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="4">
+    <widget source="session.Event_Next" render="Label" position="665,245" size="570,265" font="Regular; 22" halign="center" valign="top" foregroundColor="white" backgroundColor="#10101010" transparent="1" zPosition="4">
 			<convert type="EventName">ExtendedDescription</convert></widget>
     <eLabel position="1105,579" size="2,71" backgroundColor="bluette" zPosition="1" />
 <!-- *** Event (now) *** -->
@@ -821,7 +821,7 @@
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
     <!-- Progressbar (current event duration) -->
-    <eLabel position="248,617" size="840,1" backgroundColor="#10303030" zPosition="2" />
+    <eLabel position="248,617" size="840,1" backgroundColor="bluette" zPosition="2" />
     <widget source="session.Event_Now" render="Progress" position="248,616" size="840,3" zPosition="3" pixmap="oDreamy/box/progress_infobar.png" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
@@ -841,62 +841,62 @@
     <eLabel position="0,658" size="180,5" backgroundColor="#202020" zPosition="-1" />
     <eLabel position="180,660" size="1280,1" backgroundColor="#202020" zPosition="-1" />
     <!-- EMU Info ... -->
-    <widget source="session.CurrentService" render="Label" position="372,663" size="500,23" halign="center" font="Regular; 23" zPosition="4" backgroundColor="background" transparent="1" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="372,663" size="500,23" halign="center" font="Regular; 21" zPosition="4" backgroundColor="background" transparent="1" noWrap="1">
       <convert type="OPD_CaidBar">#00009999, #0003a902, #00af2bf9</convert>
     </widget>
     <!-- EMU Info -->
-    <widget source="session.CurrentService" render="Label" position="4,688" size="1250,30" backgroundColor="background" font="Regular; 26" foregroundColor="cyan1" transparent="1" zPosition="21" halign="center" text="Emu Info ">
+    <widget source="session.CurrentService" render="Label" position="4,683" size="1250,30" backgroundColor="background" font="Regular; 20" foregroundColor="yellow" transparent="1" zPosition="21" halign="center" text="Emu Info ">
       <convert type="OPD_CaidInfo2" />
     </widget>
     <!-- EMU Info-->
-    <widget source="session.CurrentService" render="Label" position="48,663" zPosition="4" size="260,23" font="Regular; 22" halign="center" transparent="1" backgroundColor="background" text="Emu Info" valign="center" foregroundColor="#ffff40">
+    <widget source="session.CurrentService" render="Label" position="48,663" zPosition="4" size="260,23" font="Regular; 21" halign="center" transparent="1" backgroundColor="background" text="Emu Info" valign="center" foregroundColor="#ffff40">
       <convert type="OPD_ExtraInfo">ProvCaid</convert>
     </widget>
     <!-- MSNWeather -->
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="50,35" size="73,73" source="session.MSNWeather" transparent="1" zPosition="8">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="37,20" size="80,80" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy/weather_icons_special/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 40" render="Label" position="125,35" size="140,73" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="red">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 33" render="Label" position="200,28" size="140,73" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 28" foregroundColor="yellow" render="Label" position="882,38" size="355,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 25" foregroundColor="yellow" render="Label" position="882,32" size="355,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
       <convert type="MSNWeather">temperature_text,current</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="522,43" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="519,13" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
       <convert type="MSNWeather">weekshortday,day2</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="464,44" size="55,55" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="436,20" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/oDreamy/weather_icons_special/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 26" render="Label" position="522,71" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="lime">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="512,41" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_high,day2</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="645,43" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="642,13" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
       <convert type="MSNWeather">weekshortday,day3</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="587,44" size="55,55" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="559,20" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/oDreamy/weather_icons_special/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 26" render="Label" position="645,71" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="lime">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="635,41" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_high,day3</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="769,43" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="766,13" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
       <convert type="MSNWeather">weekshortday,day4</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="711,44" size="55,55" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="684,20" size="80,80" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/oDreamy/weather_icons_special/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 26" render="Label" position="769,71" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="lime">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="759,41" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_high,day4</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 28" render="Label" position="882,72" size="355,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="unffff40">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 28" render="Label" position="882,62" size="355,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
       <convert type="MSNWeather">city</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 35" render="Label" position="262,35" size="80,50" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="yellow" text="45">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 30" render="Label" position="262,70" size="80,57" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="yellow" text="30">
       <convert type="MSNWeather">humidity</convert>
     </widget>
-    <eLabel text="Humidity :" position="253,78" size="155,30" zPosition="5" halign="center" font="Regular; 27" backgroundColor="background" transparent="1" />
-    <eLabel text="%" position="343,35" size="30,50" zPosition="5" halign="center" font="Regular; 30" backgroundColor="background" transparent="1" />
+    <eLabel text="Humidity :" position="155,70" size="155,30" zPosition="5" halign="center" font="Regular; 27" backgroundColor="background" transparent="1" />
+    <eLabel text="%" position="343,70" size="30,50" zPosition="5" halign="center" font="Regular; 30" backgroundColor="background" transparent="1" />
 	   </screen>
 	  <!-- Mediaplayer OK --> 
 	  <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" flags="wfNoBorder">
@@ -958,7 +958,7 @@
 		<!-- Logo -->
 		<eLabel  position="600,85"  size="2,495" backgroundColor="#202020" zPosition="0" />
 		<ePixmap position="605,60"  pixmap="oDreamy/menu/opendroidlogo.png" size="230,425" alphatest="blend" zPosition="1" />
-		<ePixmap position="640,420" pixmap="oDreamy/menu/dvd_player.png" size="160,160" alphatest="blend" zPosition="1" />
+		<ePixmap position="620,420" pixmap="oDreamy/menu/dvd_player.png" size="256,256" alphatest="blend" zPosition="1" />
 		<!-- Code --> 
 		<widget name="text"   position="40,75"  size="780,25" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="target" position="40,105" size="780,25" font="Regular;22" foregroundColor="white"     backgroundColor="header" transparent="1" zPosition="1" />
@@ -1008,7 +1008,7 @@
 		<!-- Logo -->
 		<eLabel  position="600,85"  size="2,495" backgroundColor="#202020" zPosition="0" />
 		<ePixmap position="605,60"  pixmap="oDreamy/menu/opendroidlogo.png" size="230,425" alphatest="blend" zPosition="1" />
-		<ePixmap position="640,420" pixmap="oDreamy/menu/dvd_player.png" size="160,160" alphatest="blend" zPosition="1" />
+		<ePixmap position="620,420" pixmap="oDreamy/menu/dvd_player.png" size="256,256" alphatest="blend" zPosition="1" />
 		<!-- Code --> 
 		<widget name="menu" position="40,80" size="562,480" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
 		<ePixmap pixmap="oDreamy/icons/dmm_logo.png" position="40,619" size="350,44" alphatest="blend" zPosition="2" />
@@ -1047,7 +1047,7 @@
 		<!-- Logo -->
 		<eLabel  position="600,85"  size="2,495" backgroundColor="#202020" zPosition="0" />
 		<ePixmap position="605,60"  pixmap="oDreamy/menu/opendroidlogo.png" size="230,425" alphatest="blend" zPosition="1" />
-		<ePixmap position="640,420" pixmap="oDreamy/menu/info_screen.png" size="160,160" alphatest="blend" zPosition="1" />
+		<ePixmap position="620,420" pixmap="oDreamy/menu/info_screen.png" size="256,256" alphatest="blend" zPosition="1" />
 		<!-- Code --> 
 		<widget source="EnigmaVersion" render="Label" position="40,85"  size="600,26" font="Regular;20" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="2" />
 		<widget source="ImageVersion"  render="Label" position="60,115" size="580,26" font="Regular;20" foregroundColor="white"     backgroundColor="header" transparent="1" zPosition="2" />
@@ -1092,7 +1092,7 @@
 		<!-- Logo -->
 		<eLabel  position="610,85"  size="2,495" backgroundColor="#202020" zPosition="0" />
 		<ePixmap position="605,60"  pixmap="oDreamy/menu/opendroidlogo.png" size="230,425" alphatest="blend" zPosition="1" />
-		<ePixmap position="640,420" pixmap="oDreamy/menu/audio.png" size="160,160" alphatest="blend" zPosition="1" />
+		<ePixmap position="640,420" pixmap="oDreamy/menu/audio.png" size="256,256" alphatest="blend" zPosition="1" />
 		<!-- Code --> 
 		<widget source="key_red" render="Pixmap"    position="40,82"  size="35,25" pixmap="oDreamy/buttons/redpanel.png"    alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
@@ -1394,9 +1394,9 @@
 		<!-- Slide -->
 		<eLabel position="428,85" size="2,495"  backgroundColor="#202020" zPosition="0" />
 		<!-- Code -->
-		<widget name="menu" position="20,85" size="410,495" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" zPosition="2" 
+		<widget name="menu" position="20,85" size="430,495" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" zPosition="2" 
 			selectionPixmap="oDreamy/menu/slider.png" backgroundPixmap="oDreamy/menu/sliderb.png" />
-		<ePixmap position="500,420" pixmap="oDreamy/menu/ico_listch.png" size="160,160" alphatest="blend" zPosition="1" />
+		<ePixmap position="480,420" pixmap="oDreamy/menu/ico_listch.png" size="256,256" alphatest="blend" zPosition="1" />
 		<!-- Logo -->
 		<ePixmap position="470,60" pixmap="oDreamy/menu/opendroidlogo.png" size="250,420" alphatest="blend" zPosition="1" />
 		<ePixmap pixmap="oDreamy/icons/dmm_logo.png" position="40,619" size="350,44" alphatest="blend" zPosition="2" />
@@ -1655,7 +1655,7 @@
 		<panel name="p700_Template"/>
 		<panel name="p700_Logo"/>
 		<widget name="menu" position="45,100" size="465,510" itemHeight="30" font="Regular;22" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="2" />
-		<ePixmap position="550,440" size="300,300" pixmap="menu/setup_selection.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="530,440" size="256,256" pixmap="menu/setup_selection.png" alphatest="blend" zPosition="2" />
 		<!--eLabel name="Debug" text="S027" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -1797,11 +1797,11 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_Date"/>
-		<panel name="nRYB"/>
+		<panel name="nRG"/>
 		<widget name="config"   position="40,90" size="480,60" font="Regular;22" itemHeight="45" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
-		<widget name="description" position="40,148" size="480,53" font="Regular;22" itemHeight="45" scrollbarMode="showNever"    backgroundColor="header" transparent="1"/>
+		<widget name="description" position="40,160" size="480,53" font="Regular;22" itemHeight="45" scrollbarMode="showNever"    backgroundColor="header" transparent="1"/>
 		
-		<ePixmap position="640,420" size="160,160" pixmap="menu/timer_edit.png" alphatest="blend"/>
+		<ePixmap position="640,420" size="256,256" pixmap="menu/timer_edit.png" alphatest="blend"/>
 		<!-- eLabel name="Debug" text="S119" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -2857,7 +2857,7 @@
 		<panel name="fakeExit"/>
 		<panel name="nG"/>
 		<panel name="I"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
+		<ePixmap position="780,440" size="256,256" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
 		<widget source="lab1" render="Label" position="50,100" size="685,40" font="Regular; 36" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
 		<widget source="lab2" render="Label" position="50,150" size="685,26" font="Regular; 22" halign="left" backgroundColor="header" transparent="1"/>
 		<widget source="lab3" render="Label" position="50,580" size="685,26" font="Regular; 22" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
@@ -2873,7 +2873,7 @@
 		<panel name="p900_Logo"/>
 		<panel name="p900_Date"/>
 		<panel name="sRGY"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
+		<ePixmap position="780,440" size="256,256" pixmap="menu/ico_opendroid.png" alphatest="blend"/>
 		<widget name="text" position="50,100" size="685,480" font="Regular;22" halign="left" backgroundColor="header" transparent="1" noWrap="1" zPosition="5"/>
 		<!--eLabel name="Debug" text="S075" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -2929,7 +2929,7 @@
 		<panel name="p900_Logo"/>
 		<panel name="p900_Date"/>
 		<panel name="fakeExit"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
 		<widget source="TranslatorName"  render="Label" font="Regular;40" position="40,100" size="685,60"  foregroundColor="ltbluette" halign="center" backgroundColor="header" transparent="1" valign="bottom"/>
 		<widget source="TranslationInfo" render="Label" font="Regular;22" position="40,220" size="685,100" halign="center" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/language.png" alphatest="blend"/>
@@ -3475,7 +3475,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S094" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3488,7 +3488,7 @@
 		<eLabel text="Install extensions" position="50,100" size="685,30"  font="Regular;28" halign="left" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
 		<widget name="list"               position="50,160" size="685,400" scrollbarMode="showOnDemand"    backgroundColor="header" zPosition="3" transparent="1"/>
 		<widget source="introduction" render="Label" position="50,570" size="680,27" font="Regular;24" halign="center" foregroundColor="#73c6ff" backgroundColor="header" zPosition="1" transparent="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S095" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
@@ -3498,7 +3498,7 @@
 		<widget source="status"  render="Label" position="10,90" size="685,60" font="Regular;24" halign="center" foregroundColor="#808080" backgroundColor="#10101010" transparent="1"/>
 		<widget name="slider"         position="10,190" size="680,10" backgroundColor="white" zPosition="1" />
 		<widget name="activityslider" position="12,192" size="676,6" backgroundColor="bluette" zPosition="2"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S096" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3509,7 +3509,7 @@
 		<panel name="p900_Date"/>
 		<panel name="sRG"/>
 		<widget name="filelist" position="50,100" size="685,275" scrollbarMode="showOnDemand" backgroundColor="header" zPosition="3" transparent="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S097" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3532,7 +3532,7 @@
 		<ePixmap position="40,648"  size="350,44"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<widget name="text"     position="50,100" size="685,30" font="Regular;22" foregroundColor="ltbluette" backgroundColor="header" halign="left" transparent="1"/>
 		<widget name="list"     position="50,100" size="685,500" itemHeight="50" scrollbarMode="showOnDemand" backgroundColor="header" zPosition="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<ePixmap position="40,648"  size="350,44"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<!--eLabel name="Debug" text="S099" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -3547,7 +3547,7 @@
 		<widget source="list" render="Listbox" position="50,150" size="680,400" scrollbarMode="showOnDemand" backgroundColor="#73c6ff" transparent="0">
 			<convert type="StringList"/>
 		</widget>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S101" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	<!-- ServiceInfo -->
@@ -3569,10 +3569,10 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Date"/>
 		<panel name="M"/>
-  <ePixmap position="605,70" size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
-		<ePixmap pixmap="box/maxbar.png" position="600,100" size="10,500" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="50,120" size="560,500" font="Regular;20" zPosition="5" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
-		<ePixmap position="650,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+                            <ePixmap position="605,70" size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="box/maxbar.png" position="590,100" size="10,500" zPosition="2" alphatest="blend"/>
+		<widget name="list" position="50,100" size="540,500" font="Regular;20" zPosition="5" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
+		<ePixmap position="630,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<ePixmap position="40,655"  pixmap="oDreamy/buttons/redpanel.png"    size="22,22" alphatest="blend" zPosition="2" />
 		<ePixmap position="370,655" pixmap="oDreamy/buttons/greenpanel.png"  size="22,22" alphatest="blend" zPosition="2" />
 		<widget name="red"    position="70,638"  size="250,55" zPosition="1" font="Regular;22" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" />
@@ -3594,7 +3594,7 @@
 		</widget>
 		<ePixmap position="605,70" size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
 		<ePixmap pixmap="box/maxbar.png" position="600,100" size="10,496" zPosition="6" alphatest="blend"/>
-		<widget source="menu" render="Listbox" position="35,100" size="700,495" scrollbarMode="showOnDemand"  transparent="1" zPosition="5"
+		<widget source="menu" render="Listbox" position="35,100" size="580,495" scrollbarMode="showOnDemand"  transparent="1" zPosition="5"
 			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
 			selectionPixmap="oDreamy/box/slider.png" backgroundPixmap="oDreamy/box/sliderb.png" >
  			<convert type="TemplatedMultiContent">
@@ -3614,7 +3614,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="620,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		
 		<!--eLabel name="Debug" text="S104" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -3626,7 +3626,7 @@
 		<panel name="M"/>
 		<widget name="config" position="50,100" size="540,500" scrollbarMode="showOnDemand" transparent="1" />
 		<widget source="introduction" render="Label" position="50,630" size="740,70" font="Regular;20" valign="center" foregroundColor="ltbluette" backgroundColor="header" transparent="1" zPosition="1" />
-		<ePixmap position="640,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="620,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S105" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>	
 	
@@ -3684,7 +3684,7 @@
 			</convert>
 		</widget>
 		<widget source="status" render="Label" position="45,560" size="555,28" foregroundColor="ltbluette" backgroundColor="background" transparent="1" font="Regular;22" halign="center"/>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="620,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S107" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3707,7 +3707,7 @@
 			</convert>
 		</widget>
 		<widget source="status" render="Label" position="590,560" size="480,25" backgroundColor="background" transparent="1" font="Regular;22" halign="center"/>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="620,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S108" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3776,7 +3776,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S113" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3799,7 +3799,7 @@
 			</convert>
 		</widget>
 		<widget name="lab1" position="50,560" size="680,40" font="Regular;22" halign="center" foregroundColor="#73c6ff" backgroundColor="header" transparent="1" zPosition="2"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S114" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3812,7 +3812,7 @@
 		<widget source="Title" render="Label" zPosition="1" position="50,100" size="585,55" halign="left" font="Regular;26" foregroundColor="ltbluette" backgroundColor="header" transparent="1"/>
 		<widget name="config" position="50,150" size="685,300" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget name="Linconn" position="40,580" size="685,24" font="Regular;20" halign="left" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S115" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3835,7 +3835,7 @@
 		<panel name="p900_Template" />
 		<panel name="p900_Logo"/>
 		<panel name="p900_Date"/>
-		<widget name="config" position="50,100" size="685,510" font="Regular;22" valign="top" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
+		<widget name="config" position="50,100" size="687,504" font="Regular;22" valign="top" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S117" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -3847,7 +3847,7 @@
 		<panel name="p900_Date"/>
 		<panel name="nRGY"/>
 		<panel name="sRGY"/>
-		<widget name="checkList" position="50,100" size="685,510" font="Regular;22" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3"/>
+		<widget name="checkList" position="50,100" size="687,504" font="Regular;22" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3"/>
 		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S118" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -3859,7 +3859,7 @@
 		<panel name="p900_Date"/>
 		<panel name="nRGY"/>
 		<widget name="checkList" position="50,100" size="685,510" font="Regular;22" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="3"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S119" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
@@ -3870,7 +3870,7 @@
 		<panel name="p900_Date"/>
 		<panel name="nRGYB"/>
 		<widget name="imageList" position="50,100" size="685,505" font="Regular;20" backgroundColor="header" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S120" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
@@ -3883,7 +3883,7 @@
 		<panel name="sRG"/>
 		<widget name="filelist" position="50,100" size="685,410" backgroundColor="header" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<widget source="message" render="Label" position="50,520" size="685,30" font="Regular;20" backgroundColor="header" halign="center" transparent="1" zPosition="3" />
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S121" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3898,7 +3898,7 @@
 		<applet type="onLayoutFinish">
 			self["list"].instance.setItemHeight(28)
 		</applet>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S122" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3910,7 +3910,7 @@
 		<panel name="sRGY"/>
 		<widget name="config" position="50,100" size="685,130" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#20000000" transparent="0"/>
 		<widget source="status" render="Label" position="50,270" size="685,70" font="Regular;20" backgroundColor="#20000000" halign="center" valign="center" zPosition="10"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S123" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3918,15 +3918,17 @@
  	<screen name="HistoryZapSelector" Title="History Zap" position="fill" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="p900_Template" />
 		<panel name="p900_Date"/>
-		<ePixmap pixmap="box/maxbar.png" position="775,100" size="10,480" zPosition="2" alphatest="blend"/>
- 		<widget source="menu" render="Listbox" position="50,100" size="735,480" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1">
+		<ePixmap position="50,648"  size="350,44"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="745,70" size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="box/maxbar.png" position="740,100" size="05,520" zPosition="2" alphatest="blend"/>
+ 		<widget source="menu" render="Listbox" position="40,100" size="705,520" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1" zPosition="1">
  			<convert type="TemplatedMultiContent">
  				{"template": [
  						MultiContentEntryText(pos = (110, 0), size = (10, 60), font = 1, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
- 						MultiContentEntryText(pos = (135, 0), size = (265, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x00000000),
- 						MultiContentEntryText(pos = (410, 0), size = (335, 55), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00ffffff, color_sel = 0x00000000),
- 						MultiContentEntryText(pos = (140, 22), size = (260, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00073c6ff, color_sel = 0x00000000),
- 						MultiContentEntryText(pos = (140, 42), size = (260, 22), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x0073c6ff, color_sel = 0x00000000),
+ 						MultiContentEntryText(pos = (135, 0), size = (285, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x00000000),
+ 						MultiContentEntryText(pos = (330, 0), size = (3550, 55), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00ffffff, color_sel = 0x00000000),
+ 						MultiContentEntryText(pos = (140, 22), size = (280, 22), font = 2, flags =   RT_VALIGN_CENTER, text = 3, color = 0x00073c6ff, color_sel = 0x00000000),
+ 						MultiContentEntryText(pos = (140, 42), size = (280, 22), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x0073c6ff, color_sel = 0x00000000),
  						MultiContentEntryPixmapAlphaBlend(pos=(0, 0), size=(100, 60), png=6, flags = BT_SCALE)
  					],
  				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 18), gFont("Regular", 17)],
@@ -3934,7 +3936,7 @@
  				}
  			</convert>
  		</widget>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="780,440" size="260,260" pixmap="menu/input.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S124" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
  	</screen>
 
@@ -3950,11 +3952,11 @@
 		<eLabel position="980,20" size="265,1"   backgroundColor="#20101010" />
 		<eLabel position="980,20" size="1,50"    backgroundColor="#20101010" />
 		<eLabel position="980,78" size="265,545" backgroundColor="#201b3c85" />
-		<ePixmap pixmap="box/maxbar.png" position="740,100" size="10,510"  alphatest="blend" zPosition="6"/>
-		<widget name="list" position="50,100" size="700,510" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="30" transparent="1" enableWrapAround="1" zPosition="5" />
-		<widget name="choosen"     position="950,100" size="290,400" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" halign="center" foregroundColor="red" backgroundColor="bluette" transparent="1" zPosition="5" />
-		<widget name="description" position="990,140" size="250,400" font="Regular;20" valign="center" halign="center" backgroundColor="bluette" transparent="1" zPosition="5" />
-		<ePixmap position="780,440" size="300,300" pixmap="menu/setup_selection.png" alphatest="blend"/>
+		<ePixmap pixmap="box/maxbar.png" position="720,100" size="10,510"  alphatest="blend" zPosition="6"/>
+		<widget name="list" position="50,100" size="670,510" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="26" transparent="1" enableWrapAround="1" zPosition="5" />
+		<widget name="choosen"     position="907,77" size="337,340" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="26" halign="center" foregroundColor="red" backgroundColor="bluette" transparent="1" zPosition="5" />
+		<widget name="description" position="990,240" size="250,400" font="Regular;20" valign="center" halign="center" backgroundColor="bluette" transparent="1" zPosition="5" />
+		<ePixmap position="760,440" size="256,256" pixmap="menu/setup_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S125" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	
@@ -3965,16 +3967,16 @@
 		<panel name="nRG"/>
 		<ePixmap position="745,70" size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
 		<ePixmap position="1080,440" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<eLabel text="Info" position="1100,32" size="140,34" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="#10202020" transparent="1" zPosition="2"/>
+		<eLabel text="Info" position="1030,30" size="140,34" font="Regular;30" halign="center" foregroundColor="ltbluette" backgroundColor="#10202020" transparent="1" zPosition="2"/>
 		<eLabel position="980,20" size="265,50"  backgroundColor="#20000000" />
 		<eLabel position="980,20" size="265,1"   backgroundColor="#20101010" />
 		<eLabel position="980,20" size="1,50"    backgroundColor="#20101010" />
 		<eLabel position="980,78" size="265,545" backgroundColor="#201b3c85" />
-		<ePixmap pixmap="box/maxbar.png" position="740,100" size="10,510"  alphatest="blend" zPosition="6"/>
-		<widget name="list" position="50,100" size="700,510" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="30" transparent="1" enableWrapAround="1" zPosition="5" />
-		<widget name="choosen"     position="990,80" size="250,400" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" halign="center" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="5" />
-		<widget name="description" position="970,80" size="250,400" font="Regular;20" valign="center" halign="center" backgroundColor="bluette" transparent="1" zPosition="5" />
-		<ePixmap position="780,440" size="300,300" pixmap="menu/setup_selection.png" alphatest="blend"/>
+		<ePixmap pixmap="box/maxbar.png" position="720,100" size="10,510"  alphatest="blend" zPosition="6"/>
+		<widget name="list" position="50,100" size="670,510" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="26" transparent="1" enableWrapAround="1" zPosition="5" />
+		<widget name="choosen"     position="907,77" size="337,340" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="26" halign="center" foregroundColor="red" backgroundColor="header" transparent="1" zPosition="5" />
+		<widget name="description" position="970,320" size="250,400" font="Regular;20" valign="center" halign="center" backgroundColor="bluette" transparent="1" zPosition="5" />
+		<ePixmap position="760,440" size="256,256" pixmap="menu/setup_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S126" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3999,7 +4001,7 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<widget name="infolist" position="50,100" size="545,500" selectionDisabled="1" backgroundColor="header" transparent="1"/>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend"/>
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S129" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -4014,7 +4016,7 @@
 			backgroundColor="#00272e43" backgroundColorSelected="#0073c6ff"
 			foregroundColorEventSelected="#0036c6" backgroundColorEventSelected="#73c6ff" 
 			foregroundColorMarkedSelected="#902020" backgroundColorMarkedSelected="#73c6ff" scrollbarMode="showOnDemand" transparent="1" />
-		<ePixmap position="640,440" size="300,300" pixmap="menu/setup_selection.png" alphatest="blend"/>
+		<ePixmap position="620,440" size="256,256" pixmap="menu/setup_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S130" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -4355,7 +4357,7 @@
 		<panel name="p800_Logo"/>
 		<panel name="nRGYB"/>
 		<widget name="list" font="Console;16" position="50,100" size="540,540" backgroundColor="header" transparent="1"/>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<!--eLabel name="Debug" text="S150" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -4368,7 +4370,7 @@
 		</widget>
 		<widget name="list" position="50,100" size="540,450" zPosition="10" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget source="introduction" render="Label" position="50,580" size="540,30" font="Regular;19" halign="center" valign="center" backgroundColor="header" transparent="1"/>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="50,648"  size="350,44"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<!--eLabel name="Debug" text="S151" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -4383,7 +4385,7 @@
 		<widget name="text" position="50,100" size="540,34" font="Regular;28" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<eLabel position="50,140" size="540,1" backgroundColor="#404040"/>
 		<widget name="entries" position="50,160" size="540,300" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<ePixmap position="50,648"  size="350,44"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		<!--eLabel name="Debug" text="S152" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -4396,7 +4398,7 @@
 		<widget source="global.CurrentTime" render="Label" position="410,31" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %B %d</convert>
 		</widget>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<widget name="CiList" position="50,100" size="540,450" zPosition="10" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<!--eLabel name="Debug" text="S153" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -4414,7 +4416,7 @@
 		<eLabel position="50,165" size="540,1" backgroundColor="#404040"/>
 		<widget name="entries" position="50,190" size="540,350" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<widget name="bottom" position="50,580" size="540,25" font="Regular;22" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<!--eLabel name="Debug" text="S154" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -4427,7 +4429,7 @@
 		<widget source="global.CurrentTime" render="Label" position="410,31" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %B %d</convert>
 		</widget>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<widget source="CAidList_desc"    render="Label" position="50,100" size="540,30" font="Regular;24" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<widget source="CAidList"         render="Label" position="50,140" size="540,75" font="Regular;22" foregroundColor="#ffffff" backgroundColor="header" transparent="1"/>
 		<widget source="ServiceList_desc" render="Label" position="50,240" size="540,30" font="Regular;24" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
@@ -4445,7 +4447,7 @@
 		<widget source="global.CurrentTime" render="Label" position="410,31" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %B %d</convert>
 		</widget>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<widget source="ServiceList_desc" render="Label" position="500,100" size="540,30" font="Regular;26" foregroundColor="#73c6ff" backgroundColor="header" transparent="1"/>
 		<eLabel position="50,140" size="585,1" backgroundColor="#101010"/>
 		<widget name="ServiceList" position="50,165" size="540,420" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
@@ -4458,7 +4460,7 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="sRG"/>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<widget name="config" position="50,100" size="540,510" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<!--eLabel name="Debug" text="S157" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -4471,7 +4473,7 @@
 		<widget source="global.CurrentTime" render="Label" position="410,31" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %B %d</convert>
 		</widget>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<ePixmap pixmap="box/maxbar.png" position="625,100" size="1,510" zPosition="2" alphatest="blend"/>
 		<widget name="servicelist" position="50,100" size="540,510" itemHeight="25" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="header" transparent="1"/>
 		<!--eLabel name="Debug" text="S158" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
@@ -4485,7 +4487,7 @@
 		<widget source="global.CurrentTime" render="Label" position="410,31" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %B %d</convert>
 		</widget>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<widget name="service" position="50,100" size="540,26" font="Regular;24" backgroundColor="header" transparent="1"/>
 		<widget name="text"    position="50,140" size="540,26" font="Regular;24" backgroundColor="header" transparent="1"/>
 		<widget name="tries"   position="50,180" size="540,26" font="Regular;24" backgroundColor="header" transparent="1"/>
@@ -4501,7 +4503,7 @@
 		<widget source="global.CurrentTime" render="Label" position="410,31" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %B %d</convert>
 		</widget>
-		<ePixmap position="640,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
+		<ePixmap position="620,440" size="300,300" pixmap="menu/ico_ci.png" alphatest="blend" zPosition="2" />
 		<widget name="service" position="50,100" size="540,26" font="Regular;24" backgroundColor="header" transparent="1"/>
 		<widget name="text"    position="50,140" size="540,26" font="Regular;24" backgroundColor="header" transparent="1"/>
 		<widget name="tries"   position="50,180" size="540,26" font="Regular;24" backgroundColor="header" transparent="1"/>

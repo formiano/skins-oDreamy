@@ -635,7 +635,7 @@
 		<panel name="p900_Ext"/>
 		<panel name="nRGYB"/> 
 		<panel name="I"/>
-		<ePixmap position="760,440" size="300,300" pixmap="menu/ico_listch.png" alphatest="blend"/>
+		<ePixmap position="780,440" size="300,300" pixmap="menu/ico_listch.png" alphatest="blend"/>
 		<widget name="config" position="50,100" size="585,500" scrollbarMode="showOnDemand"  backgroundColor="header" transparent="1"/>
 		<widget name="status" position="990,100" size="250,60" font="Regular;20"/>
 		<widget name="statusbar" position="990,200" size="250,20" font="Regular;18"/>

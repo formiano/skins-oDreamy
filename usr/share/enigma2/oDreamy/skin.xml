@@ -119,8 +119,8 @@
 		<color name="ListboxMarkedForeground"            color="#00ff00" />
 		<color name="ListboxMarkedAndSelectedBackground" color="#204176b6" />
 		<color name="ListboxMarkedAndSelectedForeground" color="#00ff00" />
-		<color name="WindowTitleForeground"              color="#ffffff" />
-		<color name="WindowTitleBackground"              color="#16244b" />
+		<color name="WindowTitleForeground"              color="#49bbff" />
+		<color name="WindowTitleBackground"              color="#1b3c85" />
 		<!-- screen border png's -->
 		<borderset name="bsWindow">
 			<pixmap pos="bpTopLeft"     filename="/usr/share/enigma2/oDreamy/box/b_tl.png" />
@@ -182,7 +182,7 @@
 	<!-- Restart Panel -->
         <screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
 		<ePixmap position="center,155" size="390,360" pixmap="oDreamy/menu/dreamybk.png" zPosition="1" alphatest="blend" />
-		<widget name="text" position="center,500" size="720,100" font="Regular;25" halign="center" backgroundColor="#10000000" foregroundColor="ltbluette" transparent="1" zPosition="1"/>
+		<eLabel  text="Restarting System Opendroid Please Wait..." position="center,500" size="720,100" font="Regular;32" halign="center" backgroundColor="#10000000" foregroundColor="ltbluette" transparent="1" zPosition="1"/>
 		<!-- ePixmap position="0,0" size="1920,1080" pixmap="oDreamy/menu/logout.png" zPosition="2" /-->
 		<!-- eLabel name="Debug" text="S000" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
         </screen>
@@ -641,7 +641,7 @@
 		<eLabel position="415,20"  size="460,1"  backgroundColor="bluette" zPosition="-1" />
 		<eLabel position="535,98"  size="340,5"  backgroundColor="bluette" zPosition="-1" />
 		<eLabel position="415,100" size="460,1"  backgroundColor="bluette" zPosition="-1" />
-<widget render="MSNWeatherPixmap" source="session.MSNWeather" position="434,22" size="78,78" zPosition="2" alphatest="blend">
+<widget render="MSNWeatherPixmap" source="session.MSNWeather" position="434,22" size="60,80" zPosition="2" alphatest="blend">
   <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy/msn/,png</convert>
 </widget>
   <widget source="session.MSNWeather" render="Label" position="532,66" size="200,40" font="Regular; 24" halign="left" foregroundColor="white" backgroundColor="header" transparent="1" zPosition="2">
@@ -839,50 +839,56 @@
       <convert type="OPD_ExtraInfo">ProvCaid</convert>
     </widget>
     <!-- MSNWeather -->
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="47,24" size="100,80" source="session.MSNWeather" transparent="1" zPosition="8">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="37,24" size="60,80" source="session.MSNWeather" transparent="1" zPosition="8">
       <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/oDreamy/msn/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 38" render="Label" position="167,28" size="150,73" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="red">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 30" render="Label" position="92,26" size="150,73" source="session.MSNWeather" transparent="1" zPosition="8" halign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 25" foregroundColor="yellow" render="Label" position="902,32" size="355,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
-      <convert type="MSNWeather">temperature_text,current</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="464,30" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="327,30" size="60,25" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
       <convert type="MSNWeather">weekshortday,day2</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="340,24" size="100,80" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="256,24" size="60,80" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/oDreamy/msn/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="454,55" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="327,53" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_high,day2</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="637,30" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 20" foregroundColor="white" render="Label" position="320,80" size="255,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+      <convert type="MSNWeather">temperature_text,day2</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="667,30" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
       <convert type="MSNWeather">weekshortday,day3</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="520,24" size="100,80" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="595,24" size="60,80" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/oDreamy/msn/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="634,55" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="667,53" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_high,day3</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="820,30" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 20" foregroundColor="white" render="Label" position="650,80" size="255,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+      <convert type="MSNWeather">temperature_text,day3</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" foregroundColor="white" render="Label" position="1000,30" size="60,28" source="session.MSNWeather" zPosition="3" halign="left" transparent="1">
       <convert type="MSNWeather">weekshortday,day4</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="702,24" size="100,80" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="927,24" size="60,80" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/oDreamy/msn/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="815,55" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="1000,53" size="60,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" foregroundColor="red">
       <convert type="MSNWeather">temperature_high,day4</convert>
+      </widget>
+    <widget noWrap="1" backgroundColor="background" font="Regular; 20" foregroundColor="white" render="Label" position="980,80" size="255,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+      <convert type="MSNWeather">temperature_text,day4</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 28" render="Label" position="902,62" size="355,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 23" render="Label" position="902,42" size="395,28" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
       <convert type="MSNWeather">city</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background" font="Regular; 22" render="Label" position="210,70" size="80,57" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="yellow" text="22">
+    <widget noWrap="1" backgroundColor="background" font="Regular; 20" render="Label" position="140,70" size="80,57" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="yellow" text="20">
       <convert type="MSNWeather">humidity</convert>
     </widget>
-    <eLabel text="Humidity:" position="137,70" size="150,30" zPosition="5" halign="center" font="Regular; 22" backgroundColor="background" transparent="1" />
-    <eLabel text="%" position="302,70" size="30,50" zPosition="5" halign="center" font="Regular; 22" backgroundColor="background" transparent="1" />
+    <eLabel text="Humidity" position="74,70" size="150,30" zPosition="5" halign="center" font="Regular; 20" backgroundColor="background" transparent="1" />
+    <eLabel text="%" position="220,70" size="30,50" zPosition="5" halign="center" font="Regular; 22" backgroundColor="background" transparent="1" />
 	   </screen>
 	  <!-- Mediaplayer OK --> 
 	  <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" flags="wfNoBorder">
@@ -3568,39 +3574,32 @@
 	
 	<!-- Software Manager -->
 	<screen name="UpdatePluginMenu" title="Softwaremanager" position="fill" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p800_Template" />
+		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_Ext"/>
 		<panel name="p800_Date"/>
 		<panel name="M"/>
-    <panel name="sRG"/>
-		<ePixmap position="950,100" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="840,32" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
-			<convert type="ClockToText">Format %A %d. %B %y</convert>
-		</widget>
-		<ePixmap position="605,70" size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
-		<ePixmap pixmap="box/maxbar.png" position="600,100" size="10,496" zPosition="6" alphatest="blend"/>
-		<widget source="menu" render="Listbox" position="35,100" size="580,495" scrollbarMode="showOnDemand"  transparent="1" zPosition="5"
-			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
-			selectionPixmap="oDreamy/box/slider.png" backgroundPixmap="oDreamy/box/sliderb.png" >
+		<widget source="menu" render="Listbox" position="70,100" size="540,495" scrollbarMode="showOnDemand" transparent="1" zPosition="5" >
  			<convert type="TemplatedMultiContent">
- 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (550, 40), flags = RT_HALIGN_LEFT, text = 1)],
- 				"fonts": [gFont("Regular", 24)],
+ 				{"template": [ MultiContentEntryText(pos = (10, 5), size = (510, 45), flags = RT_HALIGN_LEFT, text = 0)],
+ 				"fonts": [gFont("Regular", 22)],
  				"itemHeight": 45
  				}
  			</convert>
  		</widget>
-		<widget source="menu" render="Listbox" position="840,270" size="400,90" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
+		<widget source="menu" render="Listbox" position="1280,480" size="570,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0,0),size = (370,90),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					MultiContentEntryText(pos = (0,0),size = (500,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
 					],
-					"fonts": [gFont("Regular",20)],
-					"itemHeight": 90
+					"fonts": [gFont("Regular",22)],
+					"itemHeight": 100
 				}
 			</convert>
 		</widget>
-		<ePixmap position="620,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="950,100" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
+		<ePixmap position="640,440" size="256,256" pixmap="menu/download.png" alphatest="blend"/>
+		<ePixmap position="50,648"  size="350,44"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
 		
 		<!--eLabel name="Debug" text="S104" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>

@@ -3496,23 +3496,23 @@
 
 	<!-- Choose upgrade source -->
 	<screen name="IPKGMenu" title="IPKG Menu" position="fill" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p900_Template"/>
-		<panel name="p900_Logo"/>
-		<panel name="p900_Date"/>
+		<panel name="p800_Template"/>
+		<panel name="p800_Logo"/>
+		<panel name="p800_Date"/>
 		<panel name="sRG"/>
-		<widget name="filelist" position="50,100" size="685,275" scrollbarMode="showOnDemand" backgroundColor="header" zPosition="3" transparent="1"/>
-		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<widget name="filelist" position="50,100" size="545,720" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="header" zPosition="3" transparent="1"/>
+		<ePixmap position="640,440" size="256,256" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S097" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
 	<!-- Edit upgrade source -->
-	<screen name="IPKGSource" title="IPKG source" position="fill" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="p900_Template"/>
-		<panel name="p900_Logo"/>
-		<panel name="p900_Date"/>
+	<screen name="IPKGSource" title="IPKG source" position="center,center" size="1300,160" backgroundColor="10000000" >
 		<panel name="sRG"/>
-		<widget name="text" position="50,100" size="685,24" font="Regular;23" zPosition="3" backgroundColor="header" transparent="1"/>
-		<ePixmap position="780,440" size="300,300" pixmap="menu/web_browser.png" alphatest="blend"/>
+		<widget name="text" position="20,20" size="1260,50" font="Regular;28" zPosition="3" backgroundColor="header" transparent="1"/>
+		<ePixmap position="40,115"  pixmap="oDreamy/buttons/redpanel.png"    size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_red" render="Label" position="90,85" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
+		<ePixmap position="330,115" pixmap="oDreamy/buttons/greenpanel.png"  size="30,30" alphatest="blend" zPosition="2" />
+		<widget source="key_green" render="Label" position="370,85" size="210,95" font="Regular;30" halign="left" valign="center" foregroundColor="#b0b0b0" backgroundColor="header" transparent="1" zPosition="1" />
 		<!--eLabel name="Debug" text="S098" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 
@@ -3577,29 +3577,35 @@
 		<panel name="p800_Template"/>
 		<panel name="p800_Logo"/>
 		<panel name="p800_Ext"/>
-		<panel name="p800_Date"/>
 		<panel name="M"/>
-		<widget source="menu" render="Listbox" position="70,100" size="540,495" scrollbarMode="showOnDemand" transparent="1" zPosition="5" >
+    <panel name="sRG"/>
+		<ePixmap position="950,100" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="820,32" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
+			<convert type="ClockToText">Format %A %d. %B %y</convert>
+		</widget>
+		<ePixmap position="605,70" size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="box/maxbar.png" position="600,100" size="10,496" zPosition="6" alphatest="blend"/>
+		<widget source="menu" render="Listbox" position="35,100" size="565,495" scrollbarMode="showOnDemand"  transparent="1" zPosition="5"
+			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
+			selectionPixmap="oDreamy/box/slidera.png" backgroundPixmap="oDreamy/box/sliderba.png" >
  			<convert type="TemplatedMultiContent">
- 				{"template": [ MultiContentEntryText(pos = (10, 5), size = (510, 45), flags = RT_HALIGN_LEFT, text = 0)],
- 				"fonts": [gFont("Regular", 22)],
+ 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (550, 40), flags = RT_HALIGN_LEFT, text = 1)],
+ 				"fonts": [gFont("Regular", 24)],
  				"itemHeight": 45
  				}
  			</convert>
  		</widget>
-		<widget source="menu" render="Listbox" position="1280,480" size="570,140" scrollbarMode="showNever" foregroundColor="ltbluette" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
+		<widget source="menu" render="Listbox" position="840,270" size="400,90" scrollbarMode="showNever" foregroundColor="white" backgroundColor="bluette" selectionDisabled="1" zPosition="3" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0,0),size = (500,140),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
+					MultiContentEntryText(pos = (0,0),size = (370,90),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP,text = 2),# index 0 is the MenuText,
 					],
-					"fonts": [gFont("Regular",22)],
-					"itemHeight": 100
+					"fonts": [gFont("Regular",20)],
+					"itemHeight": 90
 				}
 			</convert>
 		</widget>
-		<ePixmap position="950,100" size="256,256" pixmap="menu/info_screen.png" alphatest="blend" backgroundColor="header" transparent="1" />
-		<ePixmap position="640,440" size="256,256" pixmap="menu/download.png" alphatest="blend"/>
-		<ePixmap position="50,648"  size="350,44"  pixmap="oDreamy/icons/opendroid_logo.png"  alphatest="blend" zPosition="2" />
+		<ePixmap position="640,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
 		
 		<!--eLabel name="Debug" text="S104" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
@@ -3620,7 +3626,7 @@
 		<panel name="p800_Template" />
 		<panel name="p800_Ext" />
 		<panel name="sRGY"/>
-		<widget source="global.CurrentTime" render="Label" position="840,32" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
+		<widget source="global.CurrentTime" render="Label" position="820,32" size="400,40" font="Regular;26" halign="right" foregroundColor="#505050" backgroundColor="#101010" transparent="1" zPosition="1" >
 			<convert type="ClockToText">Format %A %B %d</convert>
 		</widget>
 		<ePixmap position="950,100" size="300,300" pixmap="menu/info_screen.png" alphatest="blend"/>
@@ -3856,6 +3862,7 @@
 		<panel name="nRGYB"/>
 		<widget name="imageList" position="50,100" size="685,505" font="Regular;20" backgroundColor="header" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
 		<ePixmap position="760,440" size="300,300" pixmap="menu/plugin_selection.png" alphatest="blend"/>
+		<ePixmap position="570,650" size="40,40" pixmap="menu/buttonselect.png" alphatest="blend"/>
 		<!--eLabel name="Debug" text="S120" position="40,25" size="500,50" font="Regular;40" backgroundColor="#10000000" foregroundColor="#bc0004" transparent="1" zPosition="99"/-->
 	</screen>
 	

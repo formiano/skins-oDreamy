@@ -16,8 +16,8 @@
 		<panel name="p700_Date" />
 		<!-- menu list -->
 		<ePixmap position="495,70"  size="230,425" pixmap="oDreamy/menu/opendroidlogo.png" alphatest="blend" zPosition="1" />
-		<ePixmap pixmap="box/maxbar.png" position="482,100" size="10,495" alphatest="blend" zPosition="5" />
-		<widget source="menu" render="Listbox" position="30,100" size="454,495" zPosition="1" scrollbarMode="showOnDemand"  transparent="1"
+		<ePixmap pixmap="box/maxbar.png" position="487,100" size="10,495" alphatest="blend" zPosition="5" />
+		<widget source="menu" render="Listbox" position="35,100" size="454,495" zPosition="1" scrollbarMode="showOnDemand"  transparent="1"
 			foregroundColor="#707070" foregroundColorSelected="#ffffff" backgroundColor="#272e43" backgroundColorSelected="#272e43"
 			selectionPixmap="oDreamy/box/slider.png" backgroundPixmap="oDreamy/box/sliderb.png" >
  			<convert type="TemplatedMultiContent">
